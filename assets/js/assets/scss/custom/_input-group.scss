@@ -1,0 +1,127 @@
+.input-group {
+	box-shadow: $input-box-shadow;
+	border-radius: $input-border-radius;
+	transition: $transition-base;
+
+	.form-control {
+		box-shadow: none;
+
+		&:not(:first-child) {
+		    border-left: 0;
+		    padding-left: 0;
+		}
+		&:not(:last-child) {
+			border-right: 0;
+			padding-right: 0;
+		}
+		&:focus {
+			box-shadow: none;
+		}
+	}
+}
+
+.input-group-text {
+    transition: $input-transition;
+}
+
+.input-group-alternative {
+    box-shadow: $input-alternative-box-shadow;
+    border: 0;
+    transition: box-shadow .15s ease;
+
+    .form-control,
+    .input-group-text {
+        border: 0;
+        box-shadow: none;
+    }
+}
+
+.focused {
+	.input-group-alternative {
+        box-shadow: $input-focus-alternative-box-shadow !important;
+    }
+}
+
+
+// .focus class is applied dinamycally from theme.js
+
+.focused {
+	.input-group {
+		box-shadow: $input-focus-box-shadow;
+	}
+
+	.input-group-text {
+	    color: $input-group-addon-focus-color;
+	    background-color: $input-group-addon-focus-bg;
+	    border-color: $input-group-addon-focus-border-color;
+	}
+
+	.form-control {
+		border-color: $input-group-addon-focus-border-color;
+	}
+}
+
+//myStyle (marwa)
+
+.form-group {
+	position: relative;
+	margin-bottom: 1.5rem;
+  }
+  
+  .form-control-placeholder {
+	color: #999999 ;
+	position: absolute;
+	top: 0;
+	padding: 12px 0 0 0px;
+	//transition: all 200ms;
+  }
+  
+  .form-control:focus + .form-control-placeholder,
+  .form-control:valid + .form-control-placeholder {
+	font-size: 75%;
+	transform: translate3d(0, -100%, 0);
+	opacity: 1;
+  }
+
+ .icon-color{
+	 color:#000000;
+ }
+
+  .myinputstylefocus:focus-within {
+ 	.icon-color{color:#fd7c00;}
+  }
+/*
+	.myinputstyle:focus ~ .icon-color{
+		color:#fd7c00;
+	}*/
+  .myinputstyle:focus{
+	background-color:rgb(255, 255, 255);
+	border-bottom: 2px solid #fd7c00 ;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+	//box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.6);
+	//outline: 0 none;
+
+  }
+  .myinputstyle{
+	background-color: rgb(255, 255, 255);
+	color: #a3a3a3;
+	border-color: #a3a3a3;
+	  //border :1px solid;
+	
+	border-radius: 0;
+	border-bottom:1px solid #a3a3a3;
+	border-top:none;
+	border-left:none;
+	border-right:none;
+
+
+	//box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.6);
+	//outline: 0 none;
+
+  }
+  .text-black{
+	  color:#000000;
+  }
+  

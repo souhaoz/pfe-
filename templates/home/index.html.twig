@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Home page{% endblock %}
+
+{% block body %}
+
+<div id="app" data-token="{{ csrf_token('authenticate')}}"
+     data-last-email="{{ last_username }}"
+     data-is-authenticated="{{ is_authenticated }}" >
+</div>
+{% endblock %}

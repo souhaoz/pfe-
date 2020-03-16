@@ -1,0 +1,16 @@
+lexik_jwt_authentication:
+    public_key: '%env(resolve:JWT_PUBLIC_KEY)%'
+    secret_key: '%env(resolve:JWT_SECRET_KEY)%'
+    pass_phrase: 'admin'
+    token_ttl: '3600'
+    token_extractors:
+        authorization_header:      # look for a token as Authorization Header
+            enabled: true
+            prefix:  Bearer {token}
+            name:    Authorization
+        cookie:                    # check token in a cookie
+            enabled: false
+            name:    BEARER
+        query_parameter:           # check token in query string parameter
+            enabled: false
+            name:    bearer

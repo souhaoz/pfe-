@@ -21,7 +21,7 @@
         "@symfony/webpack-encore": "^0.28.3",
         "bootstrap-vue": "^2.5.0",
         "dotenv": "latest",
-        "jquery": "^3.4.1",
+        "jquery": "^3.5.0",
         "mdbvue": "^6.5.0",
         "nouislider": "^14.1.1",
         "qs-stringify": "^1.2.0",
